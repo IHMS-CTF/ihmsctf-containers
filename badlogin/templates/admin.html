@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>Admin File Viewer</h1>
+
+    <form method="get">
+        <label>File to view:</label>
+        <input type="text" name="file" placeholder="/flag.txt">
+        <input type="submit" value="View">
+    </form>
+
+    {% if file_contents %}
+        <pre>{{ file_contents }}</pre>
+    {% endif %}
+</body>
+</html>
