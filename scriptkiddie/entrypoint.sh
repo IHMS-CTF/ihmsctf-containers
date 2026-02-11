@@ -6,4 +6,4 @@ if [ -n "$FLAG" ]; then
   unset FLAG
 fi
 
-exec ttyd --writeable bash
+exec ttyd --writable bash
